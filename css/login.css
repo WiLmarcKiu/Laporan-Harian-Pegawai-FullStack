@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #99CACD
+}
+
+.login-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 0 5px 35px rgba(255, 255, 255, .5);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.login-box::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+    pointer-events: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, .2) 0%,
+        rgba(255, 255, 255, .1) 15%,
+        transparent 50%,
+        transparent 85%,
+        rgba(255, 255, 255, .2) 100%
+    );
+}
+
+form .logo {
+    margin: 20px auto;
+    margin-top: 0;
+    width: 135px;
+    height: 135px;
+}
+
+form .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+form h1 {
+    text-transform: capitalize;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+form .form-group {
+    margin-top: 20px;
+    position: relative;
+}
+
+form .form-group input {
+    border: 1px solid rgba(255, 255, 255, .2);
+    outline: none;
+    background-color: transparent;
+    padding: 8px 10px;
+    padding-left: 35px;
+    color: #FFFFFF;
+    /* text-transform: capitalize; */
+    font-size: 15px;
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, .2);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    letter-spacing: 1px;
+}
+
+form .form-group input::placeholder {
+    color: rgb(131, 130, 130);
+    font-size: 15px;
+}
+
+form .form-group:not(:nth-child(5)) input {
+    width: 100%;
+}
+
+form .form-group i {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: #FFFFFF;
+}
+
+form .form-group label {
+    color: #FFFFFF;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+form .form-group input[type="submit"] {
+    background: #FDCA13;
+    color: #FFFFFF;
+    padding: 8px 10px;
+    font-weight: 550;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-out;
+    border: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+form .form-group input[type="submit"]:hover {
+    background: #FFFFFF;
+    color: #000000;
+    cursor: pointer;
+}
+
+form .form-group:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form .form-group a {
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+form .form-group input[type="checkbox"] {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 2px solid #FFFFFF;
+}
+
+.back {
+    text-align: right;
+    padding-top: 8px;
+}
+
+.back a {
+    color: #FFF;
+    font-size: 14px;
+}
